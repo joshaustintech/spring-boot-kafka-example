@@ -8,7 +8,7 @@ and
 ## Requirements
 - JDK 8+
 - Postman 2.1 or newer  
-- Kafka running on the default port (9092)
+- Kafka running on the default port (9092) with the topics `retry_task` and `error_notification` added.
 - Spring Boot app running on port specified in `application.properties` (9000)
 
 Gradle 7 runs in a wrapper, so no need to install or upgrade a global Gradle installation! Just cd into the project
