@@ -8,7 +8,7 @@ and
 ## Requirements
 - JDK 8+
 - Postman 2.1 or newer  
-- Kafka running on the default port (9092) with the topics `retry_task` and `error_notification` added.
+- Kafka running on the default port (9092) with the topics `retry_task` and `error_notification` added to the `task_group` group.
 - Spring Boot app running on port specified in `application.properties` (9000)
 
 Gradle 7 runs in a wrapper, so no need to install or upgrade a global Gradle installation! Just cd into the project
@@ -18,6 +18,7 @@ directory and use `gradlew` on Linux/Mac or `gradlew.bat` on Windows instead of 
 Import the Postman collection found in the `postman` folder to test the REST API.
 
 ## Points of note
+- Underscores and periods in topic names are interchangeable - use one or the other, but never both!
 - To enable a POJO to be serialized/deserialized:
   - Its package must be designated as trusted in `application.properties`
   - Default no-args and all-args constructors should be present for each POJO  
