@@ -9,6 +9,7 @@ and
 - JDK 8+
 - Postman 2.1 or newer  
 - Kafka running on the default port (9092) with the topics `retry_task` and `error_notification` added to the `task_group` group.
+If you don't know how to run Kafka locally and add topics, check out the first three steps of the *[Apache Kafka Quickstart](https://kafka.apache.org/quickstart)*
 - Spring Boot app running on port specified in `application.properties` (9000)
 
 Gradle 7 runs in a wrapper, so no need to install or upgrade a global Gradle installation! Just cd into the project
